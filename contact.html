@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="mainHtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Rihla Travel</title>
+    <script src="news.js" defer></script>
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+<body>
+    <header class="navbar-placeholder">
+        <div class="logo-container">
+            <img src="logo.png" alt="Rihla Logo" class="logo-img">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Rihla</a>
+            <a href="services.html">Services</a>
+            <a href="news.html">What's New</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="booking-assistant">
+                <div class="nav-actions">
+                    <i class="fas fa-headset"></i>
+                    <a href="contact.html#rihla-inquiry-section" style="color: white;">Need help? Chat with us!</a>
+                </div>
+            </div>
+            <a href="booking.html">
+                <button class="lang-toggle">Book Now</button>
+            </a>
+        </div>
+    </header>
+
+<section class="concierge-hero-wrap">
+    <div class="concierge-glass-overlay"></div>
+    
+    <div class="concierge-inner">
+        <div class="concierge-intro">
+            <h1>Just a <br>Step Away.</h1>
+            <p>Connect with our travel specialists to unlock exclusive <br>heritage sites and bespoke Emirati experiences.</p>
+        </div>
+
+        <div class="direct-access-grid">
+            <div class="direct-card">
+                <div class="direct-icon"><i class="fa-solid fa-phone-flip"></i></div>
+                <div class="direct-info">
+                    <label>Inquiry Line</label>
+                    <strong>+971 12 345 6789</strong>
+                </div>
+            </div>
+
+            <div class="direct-card">
+                <div class="direct-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                <div class="direct-info">
+                    <label>Digital Desk</label>
+                    <strong>hello@rihlatravel.com</strong>
+                </div>
+            </div>
+
+            <div class="direct-card">
+                <div class="direct-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="direct-info">
+                    <label>Response Time</label>
+                    <strong>Under 15 Minutes</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="rihla-inquiry-section" id="rihla-inquiry-section">
+    <div class="rhl-container rihla-inquiry-inner">
+        
+        <div class="rihla-inquiry-text-block">
+            <h2 class="reviews-title">We will Curate <span class="text-red">Your Journey.</span></h2>
+            <p class="impact-caption">Based in the UAE, our dedicated team is waiting to transform your travel aspirations into exclusive realities.</p>
+
+
+            <div class="inquiry-thematic-img">
+                <img src="aeroplane4.jpg" alt="Rihla Luxury Experience">
+            </div>
+        </div>
+
+        <div class="rihla-inquiry-form-block">
+            <h3>Any Concerns?</h3>
+            <p>Please provide initial details below. We prioritize responses under 15 minutes.</p>
+
+            <form class="rhl-concierge-form">
+                
+                <div class="form-group">
+                    <input type="text" id="inquiryName" required>
+                    <label for="inquiryName">Name*</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="inquiryEmail" required>
+                    <label for="inquiryEmail">Email*</label>
+                </div>
+
+                <div class="form-group select-group">
+                    <select id="inquiryInterest" required>
+                        <option value="" disabled selected>What destination are you interested in? *</option>
+                        <option value="rajasthan">Rajasthan, India</option>
+                        <option value="beirut">Beirut, Lebanon</option>
+                        <option value="istanbul">Istanbul,Turkey</option>
+                        <option value="hawaii">Hawaii</option>
+                        <option value="paris">Paris, France</option>
+                        <option value="other">Other (Please specify)</option>
+                    </select>
+                </div>
+
+                <div class="form-group textarea-group">
+                    <textarea id="inquiryMessage" rows="6"></textarea>
+                    <label for="inquiryMessage">Message</label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="privacyConsent" required>
+                    <label for="privacyConsent">
+                        By clicking submit, I agree to the <a href="https://www.termsfeed.com/public/uploads/2021/12/sample-privacy-policy-template.pdf">privacy policy</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="rihla-form-submit">
+                    <span>Submit Request</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<section class="rihla-faq-section">
+    <div class="rhl-container rihla-faq-inner">
+        
+        <div class="faq-header">
+            <h2 class="reviews-title">Common <span class="text-red">Inquiries</span></h2>
+            <p class="impact-caption">Everything you need to know about our bespoke concierge services and booking process.</p>
+        </div>
+
+        <div class="rihla-accordion">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How do I begin curating a bespoke itinerary?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Simply submit an inquiry via our Inquiry Form or contact us via WhatsApp. A dedicated specialist will reach out within 15 minutes to discuss your preferences, interests, and desired pace of travel.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do you provide private aviation and transport?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. Rihla Travel maintains exclusive partnerships with private jet charters and luxury chauffeur services across the Emirates to ensure seamless, door-to-door transitions for our guests.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can you arrange access to invite-only heritage sites?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Our deep-rooted local connections allow us to facilitate private viewings and "after-hours" access to several cultural landmarks and private majlis collections that are not typically open to the general public.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is your cancellation and rescheduling policy?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>We offer a "Flexible Luxury" policy. Depending on the specific experience, rescheduling is usually available up to 48 hours before the event. Detailed terms are provided during the initial curation phase.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="rihla-footer">
+    <div class="footer-container">
+        <div class="footer-col brand-col">
+            <img src="logo.png" alt="Rihla Logo" class="footer-logo">
+            <p class="footer-desc">
+                Redefining modern travel through curated experiences and world-class service. Your journey, our passion.
+            </p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="travel.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="news.html">What's New</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Popular Hubs</h4>
+            <ul>
+                <li><a href="services.html#istanbul">Istanbul, Turkey</a></li>
+                <li><a href="services.html#hawaii">Hawaiian Islands</a></li>
+                <li><a href="services.html#paris">Paris, France</a></li>
+                <li><a href="services.html#rajasthan">Rajasthan, India</a></li>
+                <li><a href="services.html#beirut">Beirut, Lebanon</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Get in Touch</h4>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Downtown Dubai, Dubai, United Arab Emirates</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+971 12 345 6789</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>hello@rihlatravel.com</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="bottom-container">
+            <p>&copy; 2026 Rihla Travel. All rights reserved.</p>
+            <div class="bottom-links">
+                <a href="https://www.termsfeed.com/public/uploads/2021/12/sample-privacy-policy-template.pdf">Privacy Policy</a>
+                <a href="https://www.termsfeed.com/public/uploads/2021/12/sample-terms-of-service-template.pdf">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</section>
+
+</body>
+</html>
