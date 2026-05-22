@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <title>Confirm Your Rihla Journey</title>
+</head>
+<body>
+    <section class="confirm-page-wrap">
+        <div class="confirm-box">
+            <div class="confirm-intro">
+                <span class="rhl-pre-title">Final Step</span>
+                <h2>Verify Your Experience</h2>
+                <p>Review your details and select your preferred luxury tier to finalize your booking.</p>
+            </div>
+            
+            <form id="finalBookingForm" class="final-form-layout">
+                
+                <div class="item">
+                    <label>Destination</label>
+                    <select name="destination" id="confirm-dest" required>
+                        <option value="" disabled selected hidden>Select Destination</option>
+                        <option value="Istanbul">Istanbul</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Beirut">Beirut</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <label>Full Name</label>
+                    <input type="text" id="confirm-name">
+                </div>
+
+                <div class="item">
+                    <label>Passport Number</label>
+                    <input type="text" id="confirm-passport">
+                </div>
+
+                <div class="item">
+                    <label>Check-in Date</label>
+                    <input type="date" id="confirm-in">
+                </div>
+                <div class="item">
+                    <label>Check-out Date</label>
+                    <input type="date" id="confirm-out">
+                </div>
+
+                <div class="item">
+                    <label>Adults</label>
+                    <input type="number" id="confirm-adults">
+                </div>
+                <div class="item">
+                    <label>Children</label>
+                    <input type="number" id="confirm-children">
+                </div>
+                <div id="dynamic-guest-details" class="full-width">
+                    </div>
+                <div class="tier-selection-area full-width">
+                    <div class="tier-header">
+                        <label class="section-label">Select Your Service Tier</label>
+                        <a href="services.html#pricing" class="plan-info-link">Need more info? View plan details</a>
+                    </div>
+                    
+                    <div class="tier-grid">
+                        <label class="tier-card">
+                            <input type="radio" name="plan" value="Essential" checked>
+                            <div class="tier-card-inner">
+                                <span class="tier-name">Essential</span>
+                                <span class="tier-price">AED 2,500 <small>/trip</small></span>
+                            </div>
+                        </label>
+
+                        <label class="tier-card prestige-selected">
+                            <input type="radio" name="plan" value="Prestige">
+                            <div class="tier-card-inner">
+                                <span class="tier-name">Prestige</span>
+                                <span class="tier-price">AED 7,800 <small>/trip</small></span>
+                                <div class="most-popular-tag">Most Popular</div>
+                            </div>
+                        </label>
+
+                        <label class="tier-card">
+                            <input type="radio" name="plan" value="Elite">
+                            <div class="tier-card-inner">
+                                <span class="tier-name">Elite</span>
+                                <span class="tier-price">AED 15,000 <small>/trip</small></span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="item full-width">
+                    <label>Special Requests / Preferences</label>
+                    <textarea placeholder="e.g. Dietary needs, airport pickup, specific heritage sites..." rows="4"></textarea>
+                </div>
+
+                                <div class="payment-area full-width">
+                    <div class="payment-header">
+                        <label class="section-label">Secure Payment Portal</label>
+                        <div class="secure-badge"><i class="fa-solid fa-shield-halved"></i> Encrypted</div>
+                    </div>
+
+                    <div class="payment-selection">
+                        <label class="pay-option">
+                            <input type="radio" name="pay_type" value="deposit" checked>
+                            <div class="pay-box">
+                                <span>Pay 25% Deposit</span>
+                                <small>Secure your dates now</small>
+                            </div>
+                        </label>
+                        <label class="pay-option">
+                            <input type="radio" name="pay_type" value="full">
+                            <div class="pay-box">
+                                <span>Pay Full Amount</span>
+                                <small>Best for Elite tier benefits</small>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="card-details-grid">
+                        <div class="item full-width">
+                            <label>Cardholder Name</label>
+                            <input type="text" placeholder="As it appears on card">
+                        </div>
+                        <div class="item full-width">
+                            <label>Card Number</label>
+                            <div class="card-input-wrap">
+                                <input type="text" placeholder="0000 0000 0000 0000">
+                                <i class="fa-brands fa-cc-visa"></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>Expiry Date</label>
+                            <input type="text" placeholder="MM/YY">
+                        </div>
+                        <div class="item">
+                            <label>CVV</label>
+                            <input type="password" placeholder="***">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="checkbox-item full-width">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the Rihla Privacy Policy and Terms of Service.</label>
+                </div>
+
+
+                <button type="submit" class="final-pay-btn">
+                    Confirm & Complete Booking
+                </button>
+                <div class="form-actions full-width">
+                    <a href="home.html" class="return-home-ghost">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                        Return to Home
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div id="successModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3>Booking Confirmed!</h3>
+            <p>Your journey with Rihla has officially begun. Check your inbox for your digital itinerary and welcome pack.</p>
+            <a href="home.html" class="return-home-btn">Return to Home</a>
+        </div>
+    </div>
+
+    <script src="javafile.js"></script>
+</body>
+</html>
