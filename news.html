@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="mainHtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Rihla Travel</title>
+    <script src="news.js" defer></script>
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+<body>
+    <header class="navbar-placeholder">
+        <div class="logo-container">
+            <img src="logo.png" alt="Rihla Logo" class="logo-img">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Rihla</a>
+            <a href="services.html">Services</a>
+            <a href="news.html">What's New</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="booking-assistant">
+                <div class="nav-actions">
+                    <i class="fas fa-headset"></i>
+                    <a href="contact.html#rihla-inquiry-section" style="color: white;">Need help? Chat with us!</a>
+                </div>
+            </div>
+            <a href="booking.html">
+                <button class="lang-toggle">Book Now</button>
+            </a>
+        </div>
+    </header>
+
+
+<section class="rhl-slider-viewport">
+    <div class="rhl-slider-bg">
+        <video autoplay muted loop playsinline id="rhl-x-video">
+            <source src="nightfly.mp4" type="video/mp4">
+        </video>
+        <div class="rhl-slider-overlay"></div>
+    </div>
+
+    <div class="rhl-slider-content">
+        <div id="rhlTextGroup" class="rhl-text-animate">
+            <h1 id="rhlTitle">Back-to-back <br>events</h1>
+            <p id="rhlDesc">Experience the most exclusive heritage and luxury events in the region.</p>
+            <a href="home.html">
+                <button class="rhl-explore-btn">Explore more <i class="fas fa-arrow-right"></i></button>
+            </a>
+        </div>
+    </div>
+
+    <div class="rhl-slider-gallery">
+        <div class="rhl-slider-track" id="rhlTrack">
+            <div class="rhl-event-card active" data-index="0">
+                <img class= "rhl-image-slide" src="subevent1.jpg" alt="Event One">
+                <div class="rhl-card-meta">
+                    <span class="rhl-date">APR 26</span>
+                    <h3 class="rhl-name">The Istanbul Tulip Festival</h3>
+                </div>
+            </div>
+            <div class="rhl-event-card" data-index="1">
+                <img class= "rhl-image-slide" src="subevent2.jpg" alt="Event Two">
+                <div class="rhl-card-meta">
+                    <span class="rhl-date">DEC 25 - MAR 30</span>
+                    <h3 class="rhl-name">The Art Paris Fair</h3>
+                </div>
+            </div>
+            <div class="rhl-event-card" data-index="2">
+                <img class= "rhl-image-slide" src="subevent3.jpg" alt="Event Three">
+                <div class="rhl-card-meta">
+                    <span class="rhl-date">MAY 12</span>
+                    <h3 class="rhl-name">Indian Premier League (IPL)</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="rhl-slider-arrows">
+            <button id="rhlPrev" class="rhl-arrow-btn"><i class="fas fa-chevron-left"></i></button>
+            <button id="rhlNext" class="rhl-arrow-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>   
+
+<section class="rhl-news-hero">
+    <div class="rhl-hero-overlay"></div>
+    <div class="rhl-container">
+        <div class="rhl-hero-content">
+            <span class="rhl-pre-title">Dispatch</span>
+            <h1>The Rihla <br>Journal</h1>
+            <div class="rhl-hero-line"></div>
+            <p>Curating the latest updates in regional heritage, <br>elite travel, and exclusive global experiences.</p>
+        </div>
+    </div>
+</section>
+
+<section class="rhl-events-explorer">
+    <div class="explorer-header" id="explorer-header">
+        <div class="header-content">
+            <span class="rhl-pre-title">The Rihla Calendar</span>
+            <h2>Upcoming Experiences</h2>
+            <div class="header-line"></div>
+        </div>
+        
+        <div class="rhl-slider-nav">
+            <button id="explorerPrev" class="nav-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="explorerNext" class="nav-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <div class="rhl-slider-viewport">
+        <div class="rhl-slider-track" id="explorerTrack">
+            
+            <div class="rhl-event-bento">
+                <div class="bento-image">
+                    <img src="upcoming1.jpg" alt="Music Event">
+                    <div class="bento-tag">Entertainment</div>
+                </div>
+                <div class="bento-content">
+                    <h3>Restoration Summit</h3>
+                    <div class="bento-stats">
+                        <div class="stat"><i class="fa-regular fa-calendar"></i><span>April 9 – 19, 2026</span></div>
+                        <div class="stat"><i class="fa-solid fa-ticket"></i><span>$2,150</span></div>
+                        <div class="stat"><i class="fa-solid fa-location-dot"></i><span>Istanbul, Turkey</span></div>
+                    </div>
+                    <div class="bento-details">
+                        <ul class="detail-list">
+                            <li>Private Curator Walk</li>
+                            <li>Private hospitality</li>
+                            <li>Historic Cinema Access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rhl-event-bento">
+                <div class="bento-image">
+                    <img src="upcoming2.jpg" alt="Festival">
+                    <div class="bento-tag">Business</div>
+                </div>
+                <div class="bento-content">
+                    <h3>Rare Trades</h3>
+                    <div class="bento-stats">
+                        <div class="stat"><i class="fa-regular fa-calendar"></i><span>April 7 – 12, 2026</span></div>
+                        <div class="stat"><i class="fa-solid fa-ticket"></i><span>$3,600</span></div>
+                        <div class="stat"><i class="fa-solid fa-location-dot"></i><span>Paris, France</span></div>
+                    </div>
+                    <div class="bento-details">
+                        <ul class="detail-list">
+                            <li>After-hours Art VIP</li>
+                            <li>Local Artisan Market Stalls</li>
+                            <li>Hidden Atelier Tours</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rhl-event-bento">
+                <div class="bento-image">
+                    <img src="upcoming3.jpg" alt="Luxury Travel">
+                    <div class="bento-tag">Heritage</div>
+                </div>
+                <div class="bento-content">
+                    <h3>Heritage Immersion</h3>
+                    <div class="bento-stats">
+                        <div class="stat"><i class="fa-regular fa-calendar"></i><span>April 12 – 18, 2026</span></div>
+                        <div class="stat"><i class="fa-solid fa-ticket"></i><span>$5,200</span></div>
+                        <div class="stat"><i class="fa-solid fa-location-dot"></i><span>Hawaii Private 702 Island</span></div>
+                    </div>
+                    <div class="bento-details">
+                        <ul class="detail-list">
+                            <li>Private 50ft Luxury Yacht</li>
+                            <li>Volcanic Botanical Tour</li>
+                            <li>Front-row Hula Seating</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rhl-event-bento">
+                <div class="bento-image">
+                    <img src="upcoming4.jpg" alt="Adventure">
+                    <div class="bento-tag">Adventure</div>
+                </div>
+                <div class="bento-content">
+                    <h3>Maritime Heritage</h3>
+                    <div class="bento-stats">
+                        <div class="stat"><i class="fa-regular fa-calendar"></i><span>April 27 – 28, 2026</span></div>
+                        <div class="stat"><i class="fa-solid fa-ticket"></i><span>$1,850</span></div>
+                        <div class="stat"><i class="fa-solid fa-location-dot"></i><span>Byblos, Lebanon</span></div>
+                    </div>
+                    <div class="bento-details">
+                        <ul class="detail-list">
+                            <li>Culinary VIP Entry</li>
+                            <li>Ancient Harbor Expedition</li>
+                            <li>Sunset Phoenician Dinner</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="rhl-journal-archive">
+    <div class="rhl-container">
+        <div class="journal-header">
+            <span class="rhl-pre-title">The Archive</span>
+            <h2>Latest Insights</h2>
+            <div class="header-line"></div>
+        </div>
+
+        <div class="rhl-journal-stack">
+            
+            <a href="https://www.ietm.org/en/system/files/publications/ietm-mapping_lebanon_2017_en_0.pdf" target="_blank" class="journal-entry">
+                <div class="entry-visual">
+                    <img src="article2.jpg" alt="Heritage">
+                    <div class="entry-date"><span>01</span> APR</div>
+                </div>
+                
+                <div class="entry-info">
+                    <span class="entry-cat">Arts & Culture</span>
+                    <h3>Contemporary performing arts in Lebanon</h3>
+                    <p class="entry-excerpt">A comprehensive study of Lebanon’s independent performing arts landscape, exploring the resilience of artistic collectives amidst political flux and infrastructural change.</p>
+                </div>
+
+                <div class="entry-action">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span>Read PDF</span>
+                </div>
+            </a>
+
+            <a href="https://www.ijeas.org/download_data/IJEAS0212051.pdf" target="_blank" class="journal-entry">
+                <div class="entry-visual">
+                    <img src="article.jpg" alt="Aviation">
+                    <div class="entry-date"><span>28</span> MAR</div>
+                </div>
+                
+                <div class="entry-info">
+                    <span class="entry-cat">Geo-Political</span>
+                    <h3>Rajasthan: A Historical Journey Through Geo-Political Development</h3>
+                    <p class="entry-excerpt">A historical exploration of Rajasthan’s shifting borders and power dynamics, tracing the evolution of its princely states into a unified modern geopolitical entity.</p>
+                </div>
+
+                <div class="entry-action">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span>Read PDF</span>
+                </div>
+            </a>
+
+            <a href="https://api.pageplace.de/preview/DT0400.9781000904574_A46375854/preview-9781000904574_A46375854.pdf" target="_blank" class="journal-entry">
+                <div class="entry-visual">
+                    <img src="article3.jpg" alt="Gastronomy">
+                    <div class="entry-date"><span>15</span> MAR</div>
+                </div>
+                
+                <div class="entry-info">
+                    <span class="entry-cat">History</span>
+                    <h3>PARIS: The Powers that Shaped the Medieval City</h3>
+                    <p class="entry-excerpt">An investigation into the ecclesiastical and royal forces that defined medieval Paris, from its fortified walls to its rise as Europe’s intellectual and gothic heart.</p>
+                </div>
+
+                <div class="entry-action">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span>Read PDF</span>
+                </div>
+            </a>
+
+            <a href="http://www.hear.org/articles/pdfs/hawaii_and_the_pacific.pdf" target="_blank" class="journal-entry">
+                <div class="entry-visual">
+                    <img src="article4.jpg" alt="Economy">
+                    <div class="entry-date"><span>02</span> MAR</div>
+                </div>
+                
+                <div class="entry-info">
+                    <span class="entry-cat">Heritage</span>
+                    <h3>Hawaii and the Pacific Islands</h3>
+                    <p class="entry-excerpt">A historical analysis of the maritime expansion and geopolitical shifts that transformed the Pacific Islands into strategic hubs of global trade and diplomacy.</p>
+                </div>
+
+                <div class="entry-action">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span>Read PDF</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<footer class="rihla-footer">
+    <div class="footer-container">
+        <div class="footer-col brand-col">
+            <img src="logo.png" alt="Rihla Logo" class="footer-logo">
+            <p class="footer-desc">
+                Redefining modern travel through curated experiences and world-class service. Your journey, our passion.
+            </p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="news.html">What's New</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Popular Hubs</h4>
+            <ul>
+                <li><a href="services.html#istanbul">Istanbul, Turkey</a></li>
+                <li><a href="services.html#hawaii">Hawaiian Islands</a></li>
+                <li><a href="services.html#paris">Paris, France</a></li>
+                <li><a href="services.html#rajasthan">Rajasthan, India</a></li>
+                <li><a href="services.html#beirut">Beirut, Lebanon</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Get in Touch</h4>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Downtown Dubai, Dubai, United Arab Emirates</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+971 12 345 6789</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>hello@rihlatravel.com</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="bottom-container">
+            <p>&copy; 2026 Rihla Travel. All rights reserved.</p>
+            <div class="bottom-links">
+                <a href="https://www.termsfeed.com/public/uploads/2021/12/sample-privacy-policy-template.pdf">Privacy Policy</a>
+                <a href="https://www.termsfeed.com/public/uploads/2021/12/sample-terms-of-service-template.pdf">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</section>
+
+</body>
+</html>
