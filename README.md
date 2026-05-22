@@ -27,7 +27,7 @@ The repository follows a clean, industry-standard directory structure to maintai
 │   └── ...                              # Immersive motion media and background reels
 ├── home.html                            # Landing page
 ├── about.html                           # Platform background & core mission
-├── new.html                             # Latest platform updates & featured content
+├── news.html                             # Latest platform updates & featured content
 ├── services.html                        # Comprehensive feature listings
 ├── booking.html                         # Interactive reservation system
 └── contact.html                         # User inquiries & feedback channel
