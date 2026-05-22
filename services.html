@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="mainHtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Rihla Travel</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header class="navbar-placeholder">
+        <div class="logo-container">
+            <img src="logo.png" alt="Rihla Logo" class="logo-img">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Rihla</a>
+            <a href="services.html">Services</a>
+            <a href="news.html">What's New</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="booking-assistant">
+                <div class="nav-actions">
+                    <i class="fas fa-headset"></i>
+                    <a href="contact.html#rihla-inquiry-section" style="color: white;">Need help? Chat with us!</a>
+                </div>
+            </div>
+            <a href="booking.html">
+                <button class="lang-toggle">Book Now</button>
+            </a>
+        </div>
+    </header>
+
+<section class="rhl-unified-hero">
+    <div class="rhl-hero-top">
+        <div class="rhl-hero-blur-bg"></div>
+        <div class="rhl-hero-text-bridge">
+            <span class="rhl-pre-title">OUR EXPERTISE</span>
+            <h2 class="rhl-main-display">Bespoke <span class="rhl-red">Services</span></h2>
+            <p class="about-description" style="color:white;">"Rihla transformed my perspective on desert luxury."</p>
+        </div>
+    </div>
+
+    <div class="rhl-services-overlay-row">
+        <div class="rhl-service-box">
+            <img src="solo.jpg" alt="Solo Travel">
+            <div class="rhl-heart-tag" onclick="toggleWishlist(this)">
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="rhl-box-info">
+                <h4>Solo Escapes</h4>
+                <p>Safety and discovery for the independent soul.</p>
+            </div>
+        </div>
+
+        <div class="rhl-service-box">
+            <img src="culturaltour.jpg" alt="Cultural Tours">
+            <div class="rhl-heart-tag" onclick="toggleWishlist(this)">
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="rhl-box-info">
+                <h4>Cultural Tours</h4>
+                <p>Authentic heritage and local traditions.</p>
+            </div>
+        </div>
+
+        <div class="rhl-service-box">
+            <img src="luxurystay.jpg" alt="Luxury Stays">
+            <div class="rhl-heart-tag" onclick="toggleWishlist(this)">
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="rhl-box-info">
+                <h4>Luxury Stays</h4>
+                <p>Five-star desert and coastal retreats.</p>
+            </div>
+        </div>
+
+        <div class="rhl-service-box">
+            <img src="privateevent.jpg" alt="Events">
+            <div class="rhl-heart-tag" onclick="toggleWishlist(this)">
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="rhl-box-info">
+                <h4>Private Events</h4>
+                <p>Exclusive gatherings in unique locations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="rhl-compact-explorer" id="rhl-compact-explorer">
+    <div class="rhl-compact-container">
+        
+        <div class="rhl-accordion-side">
+            <div class="rhl-compact-header">
+                <h2 class="trust-title">WHERE WE <span class="highlight-red">TAKE YOU</span></h2>
+                <p class="about-description" style="text-align: center;">Old world heritage. New world luxury. Where will your story begin?</p>
+            </div>
+
+            <div class="rhl-accordion-list">
+                <div class="rhl-acc-item" id="hawaii" onmouseenter="updatePreview('dest1.jpg')" onclick="toggleAccordion(this)">
+                    <div class="rhl-acc-header">
+                        <span class="rhl-number">01</span>
+                        <h3>Hawaii</h3>
+                        <i class="fas fa-plus rhl-icon"></i>
+                    </div>
+                    <div class="rhl-acc-body">
+                        <div class="rhl-acc-inner">
+                            <p>Volcanic landscapes and private surf retreats.</p>
+                            <div class="rhl-service-note">
+                                <strong>OUR SERVICE:</strong> Exclusive access to North Shore villas, private helicopter tours, and traditional celestial wayfinding expeditions.
+                            </div>
+                            <a href="booking.html" class="rhl-book-btn">Book Journey <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rhl-acc-item" id="beirut" onmouseenter="updatePreview('dest2.jpg')" onclick="toggleAccordion(this)">
+                    <div class="rhl-acc-header">
+                        <span class="rhl-number">02</span>
+                        <h3>Beirut</h3>
+                        <i class="fas fa-plus rhl-icon"></i>
+                    </div>
+                    <div class="rhl-acc-body">
+                        <div class="rhl-acc-inner">
+                            <p>The Paris of the Middle East, blending history with modern energy.</p>
+                            <div class="rhl-service-note">
+                                <strong>OUR SERVICE:</strong> Heritage walking tours through Ottoman-era estates and private culinary experiences with master Lebanese chefs.
+                            </div>
+                            <a href="booking.html" class="rhl-book-btn">Book Journey <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rhl-acc-item" id="rajasthan" onmouseenter="updatePreview('dest3.jpg')" onclick="toggleAccordion(this)">
+                    <div class="rhl-acc-header">
+                        <span class="rhl-number">03</span>
+                        <h3>Rajasthan</h3>
+                        <i class="fas fa-plus rhl-icon"></i>
+                    </div>
+                    <div class="rhl-acc-body">
+                        <div class="rhl-acc-inner">
+                            <p>The Land of Kings, featuring majestic forts and desert hospitality.</p>
+                            <div class="rhl-service-note">
+                                <strong>OUR SERVICE:</strong> Authentic heritage fort stays and private sunset camel treks through the Great Indian Desert.
+                            </div>
+                            <a href="booking.html" class="rhl-book-btn">Book Journey <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rhl-acc-item" id="paris" onmouseenter="updatePreview('dest4.jpg')" onclick="toggleAccordion(this)">
+                    <div class="rhl-acc-header">
+                        <span class="rhl-number">04</span>
+                        <h3>Paris</h3>
+                        <i class="fas fa-plus rhl-icon"></i>
+                    </div>
+                    <div class="rhl-acc-body">
+                        <div class="rhl-acc-inner">
+                            <p>The City of Light and the global center for art and fashion.</p>
+                            <div class="rhl-service-note">
+                                <strong>OUR SERVICE:</strong> VIP museum access to hidden galleries and private Seine dinner cruises aboard vintage mahogany yachts.
+                            </div>
+                            <a href="booking.html" class="rhl-book-btn">Book Journey <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rhl-acc-item" id="istanbul" onmouseenter="updatePreview('dest5.jpg')" onclick="toggleAccordion(this)">
+                    <div class="rhl-acc-header">
+                        <span class="rhl-number">05</span>
+                        <h3>Istanbul</h3>
+                        <i class="fas fa-plus rhl-icon"></i>
+                    </div>
+                    <div class="rhl-acc-body">
+                        <div class="rhl-acc-inner">
+                            <p>The City of Light and the global center for art and fashion.</p>
+                            <div class="rhl-service-note">
+                                <strong>OUR SERVICE:</strong> Private Bosphorus yacht expeditions and exclusive after-hours access to historical Ottoman landmarks.
+                            </div>
+                            <a href="booking.html" class="rhl-book-btn">Book Journey <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rhl-image-side">
+            <div class="rhl-sticky-frame">
+                <img src="previewdest.jpg" id="mainPreviewImg" alt="Destination Preview">
+                <div class="rhl-img-overlay"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="rhl-features-bar">
+    <div class="rhl-features-header">
+        <h2 class="trust-title">WHY <span class="highlight-red">RIHLA</span></h2>
+        <p class="about-description" style="text-align: center;">Unrivaled access to the world’s most storied landscapes, designed for the discerning few.</p>
+    </div>
+
+    <div class="rhl-features-grid">
+        <div class="rhl-feature-item">
+            <div class="rhl-feature-icon">
+                <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <h3>Most Popular Destinations</h3>
+            <p>From the peaks of the Alps to the dunes of the UAE, we find the places that matter.</p>
+        </div>
+
+        <div class="rhl-feature-item">
+            <div class="rhl-feature-icon">
+                <i class="fas fa-wallet"></i>
+            </div>
+            <h3>Budget Friendly Packages</h3>
+            <p>Luxury shouldn't be out of reach. We curate experiences that maximize value without compromise.</p>
+        </div>
+
+        <div class="rhl-feature-item">
+            <div class="rhl-feature-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Satisfaction Guaranteed</h3>
+            <p>Our 24/7 local support ensures your journey is seamless from the first step to the last.</p>
+        </div>
+    </div>
+</section>
+
+<section class="rhl-immersive-services">
+    <div class="rhl-immersive-wrapper">
+        
+        <div class="rhl-services-visual">
+            <div class="rhl-image-container">
+                <img src="service1.jpg" id="rhlServiceImage" alt="Rihla Service Experience">
+                <div class="rhl-image-overlay"></div>
+            </div>
+        </div>
+
+        <div class="rhl-services-content">
+            <div class="rhl-content-header">
+                <h2 class="trust-title">THE RIHLA <span class="highlight-red">EXPERIENCE</span></h2>
+                <p class="about-description">Move beyond tourism and step into a living legacy of curated exclusivity.</p>
+            </div>
+
+            <div class="rhl-service-list">
+                <div class="rhl-service-item active" onmouseenter="changeServiceImage('service2.jpg', this)">
+                    <div class="rhl-item-head">
+                        <span class="rhl-number">01</span>
+                        <h3>Bespoke Curation</h3>
+                    </div>
+                    <div class="rhl-item-body">
+                        <p>We don't just book trips; we architect experiences. From hidden heritage sites to private culinary encounters, every detail is hand-picked for the discerning solo traveler.</p>
+                    </div>
+                </div>
+
+                <div class="rhl-service-item" onmouseenter="changeServiceImage('service3.jpg', this)">
+                    <div class="rhl-item-head">
+                        <span class="rhl-number">02</span>
+                        <h3>Guardian Concierge</h3>
+                    </div>
+                    <div class="rhl-item-body">
+                        <p>Travel with total independence and zero anxiety. Our 24/7 digital and local concierge acts as your invisible safety net, handling logistics in real-time.</p>
+                    </div>
+                </div>
+
+                <div class="rhl-service-item" onmouseenter="changeServiceImage('service4.jpg', this)">
+                    <div class="rhl-item-head">
+                        <span class="rhl-number">03</span>
+                        <h3>Private Sanctuaries</h3>
+                    </div>
+                    <div class="rhl-item-body">
+                        <p>Access a vetted portfolio of boutique stays. We prioritize properties that offer unique architectural character, top-tier safety, and a sense of place.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="rhl-pricing-section">
+    <div class="rhl-container">
+        <div class="rhl-pricing-header">
+            <h2 class="trust-title">CHOOSE YOUR <span class="highlight-red">TIER</span></h2>
+            <p class="about-description">Every mile we've traveled is backed by a legacy of trust and excellence.</p>
+        </div>
+
+        <div class="rhl-pricing-grid">
+            
+            <div class="rhl-price-card" data-tier="essential">
+                <div class="rhl-price-top">
+                    <span class="rhl-tier-name">ESSENTIAL</span>
+                    <div class="rhl-amount">AED 2,500<span class="rhl-per">/Trip</span></div>
+                </div>
+                <div class="rhl-price-features">
+                    <p>Perfect for the independent traveler needing a solid foundation.</p>
+                    <details class="rhl-dropdown">
+                        <summary>What’s included? <i class="fas fa-chevron-down"></i></summary>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Bespoke Digital Itinerary</li>
+                            <li><i class="fas fa-check"></i> Vetted Solo-Safe Stays</li>
+                            <li><i class="fas fa-check"></i> 12/7 Digital Support</li>
+                            <li><i class="fas fa-times"></i> Private Transport</li>
+                        </ul>
+                    </details>
+                </div>
+                <a href="booking.html" style="text-decoration: none;">
+                    <button class="rhl-btn-select">Select Essential</button>
+                </a>
+            </div>
+
+            <div class="rhl-price-card rhl-featured" data-tier="prestige">
+                <div class="rhl-popular-tag">MOST POPULAR</div>
+                <div class="rhl-price-top">
+                    <span class="rhl-tier-name">PRESTIGE</span>
+                    <div class="rhl-amount">AED 7,800<span class="rhl-per">/Trip</span></div>
+                </div>
+                <div class="rhl-price-features">
+                    <p>Enhanced support and private local experiences.</p>
+                    <details class="rhl-dropdown" open>
+                        <summary>What’s included? <i class="fas fa-chevron-down"></i></summary>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Essential</li>
+                            <li><i class="fas fa-check"></i> Private Chauffeur (2 Days)</li>
+                            <li><i class="fas fa-check"></i> 24/7 Priority Concierge</li>
+                            <li><i class="fas fa-check"></i> Local Heritage Tour</li>
+                        </ul>
+                    </details>
+                </div>
+                <a href="booking.html" style="text-decoration: none;">
+                    <button class="rhl-btn-select featured-btn" href="booking.html">Select Prestige</button>
+                </a>
+            </div>
+
+            <div class="rhl-price-card" data-tier="elite">
+                <div class="rhl-price-top">
+                    <span class="rhl-tier-name">ELITE</span>
+                    <div class="rhl-amount">AED 15,000<span class="rhl-per">/Trip</span></div>
+                </div>
+                <div class="rhl-price-features">
+                    <p>Total immersion with no compromises on luxury.</p>
+                    <details class="rhl-dropdown">
+                        <summary>What’s included? <i class="fas fa-chevron-down"></i></summary>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Prestige</li>
+                            <li><i class="fas fa-check"></i> Private Yacht (4 Hours)</li>
+                            <li><i class="fas fa-check"></i> Luxury Suite Upgrades</li>
+                            <li><i class="fas fa-check"></i> Personal Travel Guardian</li>
+                        </ul>
+                    </details>
+                </div>
+                <a href="booking.html" style="text-decoration: none;">
+                    <button class="rhl-btn-select">Select Elite</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>  
+
+<section class="rhl-mini-cta">
+    <div class="rhl-mini-wrapper">
+        
+        <div id="subscription-ui">
+            <div class="rhl-mini-text">
+                <h2 class="trust-title" style="text-align: center; color:#fff">
+                    JOIN THE <span class="highlight-red">INNER CIRCLE</span>
+                </h2>
+                <p style="text-align: center; color:#fff">Receive exclusive regional guides and private offers directly to your inbox.</p>
+            </div>
+            
+            <form class="rhl-email-form" onsubmit="handleSubscription(event)">
+                <input type="email" id="user-email" placeholder="Enter your email address" required>
+                <button type="submit" class="rhl-btn-submit">
+                    Subscribe <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+            
+            <span class="rhl-privacy-note" style="display: block; text-align: center; color: rgba(255,255,255,0.7); font-size: 0.8rem; margin-top: 15px;">
+                By subscribing, you agree to our privacy standards. No spam, ever.
+            </span>
+        </div>
+
+        <div id="success-ui" style="display: none; text-align: center; padding: 40px 0;">
+            <div class="rhl-mini-text">
+                <i class="fas fa-check-circle" style="color: #8B0000; font-size: 3rem; margin-bottom: 20px;"></i>
+                <h2 class="trust-title" style="color:#fff">WELCOME TO THE <span class="highlight-red">INNER CIRCLE</span></h2>
+                <p style="color:#fff; margin-top: 10px;">Your legacy begins here. You will receive a confirmation mail soon.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="rhl-gallery-showcase">
+    <div class="rhl-gallery-header">
+        <h2 class="trust-title" style="text-align: center;">THE VISUAL <span class="highlight-red" style="text-align: center;">NARRATIVE</span></h2>
+        <p class="about-description" style="text-align: center;">A visual chronicle of heritage: documenting the intersection of ancient history and modern sanctuary.</p>
+
+    </div>
+
+    <div class="rhl-masonry-grid">
+        <div class="rhl-gallery-item rhl-tall">
+            <div class="rhl-img-wrapper">
+                <img src="gallery5.jpg" alt="Luxury Yachting">
+                <div class="rhl-gallery-info">
+                    <span class="rhl-loc">Hawaii</span>
+                    <h3>Private Charter</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="rhl-gallery-item">
+            <div class="rhl-img-wrapper">
+                <img src="gallery4.jpg" alt="5-Star Hotel">
+                <div class="rhl-gallery-info">
+                    <span class="rhl-loc">Sanctuary</span>
+                    <h3>Royal Suite</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="rhl-gallery-item">
+            <div class="rhl-img-wrapper">
+                <img src="gallery3.jpg" alt="Beirut Streets">
+                <div class="rhl-gallery-info">
+                    <span class="rhl-loc">Heritage</span>
+                    <h3>Local Souls</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="rhl-gallery-item rhl-wide">
+            <div class="rhl-img-wrapper">
+                <img src="gallery2.jpg" alt="Desert Experience">
+                <div class="rhl-gallery-info">
+                    <span class="rhl-loc">Beirut</span>
+                    <h3>Hidden Dunes</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="rhl-gallery-item">
+            <div class="rhl-img-wrapper">
+                <img src="gallery.jpg" alt="Private Aviation">
+                <div class="rhl-gallery-info">
+                    <span class="rhl-loc">Global</span>
+                    <h3>Above the Clouds</h3>
+                </div>
+            </div>
+        </div>
+        <div class="rhl-gallery-item">
+            <div class="rhl-img-wrapper">
+                <img src="gallery6.jpg" alt="Private Aviation">
+                <div class="rhl-gallery-info">
+                    <span class="rhl-loc">Nature</span>
+                    <h3>Hiking Tracks</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="rihla-footer">
+    <div class="footer-container">
+        <div class="footer-col brand-col">
+            <img src="logo.png" alt="Rihla Logo" class="footer-logo">
+            <p class="footer-desc">
+                Redefining modern travel through curated experiences and world-class service. Your journey, our passion.
+            </p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="news.html">What's New</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Popular Hubs</h4>
+            <ul>
+                <li><a href="services.html#istanbul">Istanbul, Turkey</a></li>
+                <li><a href="services.html#hawaii">Hawaiian Islands</a></li>
+                <li><a href="services.html#paris">Paris, France</a></li>
+                <li><a href="services.html#rajasthan">Rajasthan, India</a></li>
+                <li><a href="services.html#beirut">Beirut, Lebanon</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Get in Touch</h4>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Downtown Dubai, Dubai, United Arab Emirates</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+971 12 345 6789</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>hello@rihlatravel.com</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="bottom-container">
+            <p>&copy; 2026 Rihla Travel. All rights reserved.</p>
+            <div class="bottom-links">
+                <a href="https://www.termsfeed.com/public/uploads/2021/12/sample-privacy-policy-template.pdf">Privacy Policy</a>
+                <a href="https://www.termsfeed.com/public/uploads/2021/12/sample-terms-of-service-template.pdf">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</section>
+<!-- 1. Keep your main JS file -->
+<script src="javafile.js"></script>
+
+<!-- 2. This separate script handles the auto-opening -->
+<script>
+    function triggerDeepLink() {
+        const currentHash = window.location.hash;
+        
+        if (currentHash) {
+            const targetEl = document.querySelector(currentHash);
+            
+            if (targetEl) {
+                // 1. Force the scroll
+                targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                // 2. Use a slightly longer timeout for footer links
+                setTimeout(() => {
+                    // Check if it's already active to avoid double-clicking
+                    if (!targetEl.classList.contains('active')) {
+                        console.log("Triggering click for footer link...");
+                        targetEl.click(); 
+                    }
+                }, 1000); // 1 second is safer for footer-to-page transitions
+            }
+        }
+    }
+
+    // Run when the page is fully loaded
+    window.addEventListener('load', triggerDeepLink);
+
+    // Run if the user clicks a footer link while already on the services page
+    window.addEventListener('hashchange', triggerDeepLink);
+</script>
+</body>
+</html>
